@@ -1,8 +1,28 @@
 import React from 'react'
+import { FaWallet, FaTree, FaSocks } from "react-icons/fa"
 
 const Services = ()=>{
     return(
-        <h2>Services</h2>
+        <section>
+        <div>
+            <h4>Our Services</h4>
+        </div>
+        <div>
+            <span><FaWallet /></span>
+            <h4>saving monay</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Null</p>
+        </div>
+        <div>
+            <span><FaTree /></span>
+            <h4>endless hiking</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Null</p>
+        </div>
+        <div>
+            <span><FaSocks /></span>
+            <h4>amazing comfort</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Null</p>
+        </div>
+        </section>
     )
 }
 
