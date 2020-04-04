@@ -5,7 +5,7 @@ const Services = ()=>{
     return(
         <section>
         <div>
-            <h4>Our Services</h4>
+            <h2>Our Services</h2>
         </div>
         <div>
             <span><FaWallet /></span>

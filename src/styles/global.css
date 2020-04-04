@@ -1,0 +1,37 @@
+:root {
+  --dark: #333;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Inria Serif', serif;
+    line-height: 1.6;
+  }
+  a {
+      text-decoration: none;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: 'Tomorrow', sans-serif;
+    padding: 0 1rem 1.25rem 1rem;
+  } 
+  h2 {
+    font-size: 2rem;
+    display: block;
+    padding: 0.5rem;
+    text-align: center;
+  }
+  ul {
+      list-style: none;
+      display: flex;
+  }
+  p,
+  li {
+  padding: 0 1rem 0.5rem 1rem;
+  }
+  

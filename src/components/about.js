@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
 import Image from 'gatsby-image'
 
@@ -21,7 +22,7 @@ const About = ()=>{
     return(
       <section>
       <div>
-        <h4>About <span>Us</span></h4>
+        <h2>About <span>Us</span></h2>
       </div>
       <div>
         <Image fluid = {ourImage} alt = ''/>
@@ -38,7 +39,7 @@ const About = ()=>{
           </p>
       </div>
       <div>
-
+      <button><Link to = '/blog'>Read more</Link></button>
       </div>
       </section>  
     )

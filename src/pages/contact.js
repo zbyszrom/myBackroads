@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 const Contact = () =>{
     return(
        <Layout>
+           <section>
            <div>
            <h2>Contact Us</h2>
            </div>
@@ -24,7 +25,7 @@ const Contact = () =>{
                    <input type="submit" value='submit here'/>
                </div>
            </form>
-           
+           </section>
        </Layout> 
     )
 }

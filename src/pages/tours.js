@@ -31,8 +31,9 @@ const Tours = () =>{
 
     return(
        <Layout>
+         <section>
            <div>
-           <h4>All <span>Tours</span></h4> 
+           <h2>All <span>Tours</span></h2> 
            </div>
            <div>        
         {excursions.map(({node}) => {
@@ -40,6 +41,7 @@ const Tours = () =>{
         
       })}
         </div>
+        </section>
        </Layout> 
     )
 }
