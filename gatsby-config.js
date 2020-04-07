@@ -16,6 +16,7 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    
     {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
@@ -41,6 +42,7 @@ module.exports = {
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    
    
   ],
 }

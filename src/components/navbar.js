@@ -15,7 +15,7 @@ const Navbar = ()=>{
            <button type="button" onClick={toggleNav}>
            <FaAlignRight/>
            </button>
-           <ul>
+            <ul style = {isOpen ? {height: '216px'} : {height: 0}}>
              <li><Link to = "/">home</Link></li>     
              <li><Link to = "/tours">Tours</Link></li>     
              <li><Link to = "/blog">Blog</Link></li>    
