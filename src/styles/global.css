@@ -1,6 +1,9 @@
 :root {
+  --primary: #3fd0d4;
   --dark: #333;
+  --black: #222;
   --mainSpacing: 4px;
+  --transition: all 0.3s linear;
 }
 * {
     margin: 0;
@@ -37,12 +40,5 @@
   li {
   padding: 0 1rem 0.5rem 1rem;
   }
-  .links {
-
-    height: 0;
-    overflow: hidden;
-  }
-  .showNav {
-    height: 216px;
-  }
+ 
   
