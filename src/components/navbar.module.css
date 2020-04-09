@@ -20,7 +20,7 @@ links a {
 .show-nav {
     height: 116px;
 }
-@media (min-width: 992px) {
+@media (min-width: 960px) {
     .links {
       height: auto;
       display: flex;

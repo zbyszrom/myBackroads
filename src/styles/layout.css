@@ -4,7 +4,6 @@ main {
   flex-direction: column;
 }
 
-
 footer {
   margin-top: auto;
   background:var(--dark);

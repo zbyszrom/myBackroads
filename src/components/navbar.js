@@ -6,8 +6,8 @@ import styles from "./navbar.module.css"
 import styled from 'styled-components'
 
    const Nav = styled.nav`
-    @media (min-width: 992px) {
-        max-width: 1170px;
+    @media (min-width: 960px) {
+        max-width: 1200px;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
@@ -27,7 +27,7 @@ import styled from 'styled-components'
     &:hover {
       cursor: pointer
     }
-    @media (min-width: 992px) {
+    @media (min-width: 960px) {
         display: none;
     }
    `
@@ -37,7 +37,6 @@ import styled from 'styled-components'
 `
 const SLink = styled(Link)`
       padding: 1rem 1.25rem;
-      text-decoration: none;
       text-transform: capitalize;
       color: var(--mainBlack);
       transition: var(--mainTransition);
@@ -49,7 +48,7 @@ const SLink = styled(Link)`
 `
 const Social = styled.div`
         display: none;
-        @media (min-width: 992px){
+        @media (min-width: 960px){
         display: flex;
       
       a {
