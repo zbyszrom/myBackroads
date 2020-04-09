@@ -48,5 +48,13 @@
     transition: var(--ransition);
     cursor: pointer;
   }
+  .imgContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    top: -1rem;
+    left: 1rem;    
+  }
  
   

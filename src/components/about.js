@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
+import styled from 'styled-components'
 import Image from 'gatsby-image'
 
 const getAbout = graphql`
@@ -14,21 +15,46 @@ const getAbout = graphql`
     }
   }
 `
+const Section = styled.section`
+  @media(max-width: 800px){
+    display: flex;
+    flex-direction: column; 
+  }
+`
+
+const Button = styled.button`
+  margin-left: 1rem;
+  background: transparent; 
+      border: 2px solid var(--primary);
+      a {
+        color: var(--primary);
+      }
+      &:hover {
+        background: var(--primary);  
+        a {
+          color: white; 
+        }
+      }
+`
 
 const About = ()=>{
 
   const { aboutImage } = useStaticQuery(getAbout)
   const ourImage = aboutImage.childImageSharp.fluid
     return(
-      <section>
+     <>
       <div>
         <h2>About <span>Us</span></h2>
       </div>
-      <div>
+      <Section>
+      <article>
+        <div className = 'imgContainer'>
         <Image fluid = {ourImage} alt = ''/>
-      </div>
+        </div>
+      </article>
+      <article >
       <div>
-         <h4>explore the difference</h4>
+         <h4>Explore the difference</h4>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla
             doloribus enim necessitatibus?
@@ -38,10 +64,13 @@ const About = ()=>{
             doloribus enim necessitatibus?
           </p>
       </div>
-      <div>
-      <button><Link to = '/blog'>Read more</Link></button>
-      </div>
-      </section>  
+      
+      <Button><Link to = '/blog'>Read more</Link></Button>
+      
+      </article>
+     
+      </Section> 
+      </> 
     )
 }
 

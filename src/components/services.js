@@ -3,10 +3,11 @@ import { FaWallet, FaTree, FaSocks } from "react-icons/fa"
 
 const Services = ()=>{
     return(
-        <section>
+        <>
         <div>
             <h2>Our Services</h2>
         </div>
+        <section>
         <div>
             <span><FaWallet /></span>
             <h4>saving monay</h4>
@@ -23,6 +24,7 @@ const Services = ()=>{
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Null</p>
         </div>
         </section>
+        </>
     )
 }
 

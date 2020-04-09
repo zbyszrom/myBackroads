@@ -4,6 +4,15 @@ main {
   flex-direction: column;
 }
 
+section { 
+  padding: 2rem 1rem;
+  margin: 1rem 2.5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  
+}
+
 footer {
   margin-top: auto;
   background:var(--dark);
@@ -13,10 +22,4 @@ footer {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-}
-
-
-section { 
-  padding: 2rem 1rem;
-  margin: 1rem 2.5%;
 }
