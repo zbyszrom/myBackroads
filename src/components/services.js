@@ -1,5 +1,22 @@
 import React from 'react'
 import { FaWallet, FaTree, FaSocks } from "react-icons/fa"
+import styled from 'styled-components'
+
+const Section = styled.section`
+    display: flex;
+    @media(max-width:600px){
+    
+    flex-direction: column;
+    }
+`
+const Service = styled.div`
+display: flex;
+flex-direction: column;
+align-items: center;
+
+
+
+`
 
 const Services = ()=>{
     return(
@@ -7,23 +24,23 @@ const Services = ()=>{
         <div>
             <h2>Our Services</h2>
         </div>
-        <section>
-        <div>
+        <Section>
+        <Service>
             <span><FaWallet /></span>
             <h4>saving monay</h4>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Null</p>
-        </div>
-        <div>
+        </Service>
+        <Service>
             <span><FaTree /></span>
             <h4>endless hiking</h4>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Null</p>
-        </div>
-        <div>
+        </Service>
+        <Service>
             <span><FaSocks /></span>
             <h4>amazing comfort</h4>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Null</p>
-        </div>
-        </section>
+        </Service>
+        </Section>
         </>
     )
 }

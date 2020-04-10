@@ -16,6 +16,7 @@ const getAbout = graphql`
   }
 `
 const Section = styled.section`
+  grid-template-columns: 1fr 1fr;
   @media(max-width: 800px){
     display: flex;
     flex-direction: column; 
