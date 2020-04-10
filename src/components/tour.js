@@ -1,6 +1,9 @@
 import React from "react"
 import Image from "gatsby-image"
 import { Link} from 'gatsby'
+//import styled from 'styled-components'
+
+
 
 const Tour = ({tour})=>{
     const {name, country, images, slug} = tour

@@ -22,7 +22,14 @@ const Section = styled.section`
     flex-direction: column; 
   }
 `
-
+const ImgContainer = styled.div`
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    top: -1rem;
+    left: 1rem;  
+`
 const Button = styled.button`
   margin-left: 1rem;
   background: transparent; 
@@ -49,9 +56,9 @@ const About = ()=>{
       </div>
       <Section>
       <article>
-        <div className = 'imgContainer'>
+        <ImgContainer>
         <Image fluid = {ourImage} alt = ''/>
-        </div>
+        </ImgContainer>
       </article>
       <article >
       <div>

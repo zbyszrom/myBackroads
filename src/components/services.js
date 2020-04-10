@@ -5,7 +5,6 @@ import styled from 'styled-components'
 const Section = styled.section`
     display: flex;
     @media(max-width:600px){
-    
     flex-direction: column;
     }
 `
@@ -13,9 +12,6 @@ const Service = styled.div`
 display: flex;
 flex-direction: column;
 align-items: center;
-
-
-
 `
 
 const Services = ()=>{
