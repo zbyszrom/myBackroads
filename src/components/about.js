@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
 import styled from 'styled-components'
+import {Button} from '../styledComponents/button'
 import Image from 'gatsby-image'
 
 const getAbout = graphql`
@@ -17,9 +18,14 @@ const getAbout = graphql`
 `
 const Section = styled.section`
   grid-template-columns: 1fr 1fr;
-  @media(max-width: 800px){
+  padding: 1rem;
+  margin: 1rem 2.5%;
+  display: grid;
+  grid-gap: 2rem;
+  @media(max-width: 900px){
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
+    margin: 1rem 5% 1rem 2.5%;
   }
 `
 const ImgContainer = styled.div`
@@ -30,20 +36,7 @@ const ImgContainer = styled.div`
     top: -1rem;
     left: 1rem;  
 `
-const Button = styled.button`
-  margin-left: 1rem;
-  background: transparent; 
-      border: 2px solid var(--primary);
-      a {
-        color: var(--primary);
-      }
-      &:hover {
-        background: var(--primary);  
-        a {
-          color: white; 
-        }
-      }
-`
+
 
 const About = ()=>{
 

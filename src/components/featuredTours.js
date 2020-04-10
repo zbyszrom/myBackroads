@@ -2,7 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Tour from "./tour"
 import { Link } from "gatsby"
-import styled from 'styled-components'
+import {Button} from '../styledComponents/button' 
 
 
 const getTours = graphql`
@@ -24,16 +24,6 @@ query {
   }
 }
 `
-const Section = styled.section`
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  text-align: center;
-  padding: 2rem 0;
- 
-  @media(min-width: 600){
-    grid-template-columns: repeat(auto-fill, minmax(368.66px, 1fr));
-    
-  }
-`
 
 const FeaturedTours = ()=> {
 
@@ -42,22 +32,22 @@ const FeaturedTours = ()=> {
 
     return (
       <>
-      <div>
+    <div>
       <h2>Featured <span>Tours</span></h2>
-      </div>
-    <Section>
-         
+    </div>
+    <section>         
         {tours.map(({ node }) => {
         return <Tour key={node.id} tour = {node}  />         
       })}
-    </Section>
-        <div>
+    </section>
+        <div style = {{textAlign: 'center', marginBottom: '2rem'}}>
+        <Button>
         <Link to="/tours" >
-        All tours
+            All tours
         </Link>
-        </div>
-    
-        </>
+        </Button>
+        </div>    
+    </>
     )
 
 }

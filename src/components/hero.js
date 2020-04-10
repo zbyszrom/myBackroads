@@ -33,6 +33,7 @@ const SBackgroundImage = styled(BackgroundImage)`
       margin-bottom: 2rem;
     }
     button {
+    
       background: var(--primary);
       border: 2px solid var(--primary);
       a {
@@ -58,7 +59,7 @@ const Hero = ()=>{
            <h1>Continue Exploring</h1>
            <h4>Welcome to my presentation</h4>
            </div>
-           <button><Link to = '/tours'>AllTours</Link></button>
+           <button><Link to = '/tours'>All Tours</Link></button>
            
            
        </SBackgroundImage>
