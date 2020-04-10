@@ -13,7 +13,7 @@ const Tour = ({tour})=>{
             <div>
                 <Image fluid = {mainImg}/>
             </div>
-            <Link to = {'/'}>
+            <Link to={`/tours/${slug}`}> 
                 <h3>{name}</h3>
             </Link>
             <h4>{country}</h4>

@@ -23,15 +23,7 @@ query {
   }
 }
 `
-const Section = styled.section`
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  text-align: center;
-  padding: 2rem 0;
-  @media(min-width: 600){
-    grid-template-columns: repeat(auto-fill, minmax(368.66px, 1fr));
-    
-  }
-  `
+
 
 const Tours = () =>{
 
@@ -45,12 +37,12 @@ const Tours = () =>{
            <div>
            <h2>All <span>Tours</span></h2> 
            </div>
-           <Section>        
+           <section>        
         {excursions.map(({node}) => {
         return <Tour key={node.id} tour = {node}  /> 
         
       })}
-        </Section>
+        </section>
         
        </Layout> 
     )
