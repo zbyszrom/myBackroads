@@ -27,6 +27,7 @@ query {
 
   const Section = styled.section`
     grid-template-columns: 1fr;
+    margin-bottom: 2rem;
     Button {
       background: transparent; 
           a {
@@ -58,8 +59,8 @@ const FeaturedTours = ()=> {
         return <Tour key={node.id} tour = {node}  />         
       })}
     </section>
-    <Section>
-        <div style = {{textAlign: 'center', marginBottom: '2rem'}}>
+    <Section >
+        <div >
         <Button>
         <Link to="/tours" >
             All tours
