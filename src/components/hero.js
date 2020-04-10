@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
 import BackgroundImage from 'gatsby-background-image'
 import styled from 'styled-components'
+import Button from '../styledComponents/button'
 
 const getHero = graphql`
   query heroImage {
@@ -32,7 +33,7 @@ const SBackgroundImage = styled(BackgroundImage)`
       text-align: center;  
       margin-bottom: 2rem;
     }
-    button {
+    Button {
     
       background: var(--primary);
       border: 2px solid var(--primary);
@@ -59,7 +60,7 @@ const Hero = ()=>{
            <h1>Continue Exploring</h1>
            <h4>Welcome to my presentation</h4>
            </div>
-           <button><Link to = '/tours'>All Tours</Link></button>
+           <Button><Link to = '/tours'>All Tours</Link></Button>
            
            
        </SBackgroundImage>

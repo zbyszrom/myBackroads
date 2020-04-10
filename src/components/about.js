@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
 import styled from 'styled-components'
-import {Button} from '../styledComponents/button'
+import Button from '../styledComponents/button'
 import Image from 'gatsby-image'
 
 const getAbout = graphql`
@@ -26,6 +26,19 @@ const Section = styled.section`
     display: flex;
     flex-direction: column;
     margin: 1rem 5% 1rem 2.5%;
+  }
+  Button {
+    margin-left: 1rem;
+    background: transparent; 
+          a {
+        color: var(--primary);
+      }
+      &:hover {
+        background: var(--primary);  
+        a {
+          color: white; 
+        }
+      }
   }
 `
 const ImgContainer = styled.div`

@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Image from "gatsby-image"
 import Layout from "../components/layout"
-import styled from 'styled-components'
+//import styled from 'styled-components'
 
 export const query = graphql`
   query($slug: String!) {
@@ -33,7 +33,7 @@ const Template = ({data}) =>{
         descriptionNode,
         images,
         country,
-        } = data .tour
+        } = data.tour
 
     return(
         <Layout>

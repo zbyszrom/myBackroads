@@ -1,17 +1,12 @@
 import styled from "styled-components";
 
-export const Button = styled.button`
-    
-    margin-left: 1rem;
-    background: transparent; 
+const Button = styled.button`
+    text-transform: uppercase;
+    letter-spacing: var(--mainSpacing);
+    padding: 0.9rem 1.6rem;
+    display: inline-block;
+    transition: var(--ransition);
+    cursor: pointer;
     border: 2px solid var(--primary);
-      a {
-        color: var(--primary);
-      }
-      &:hover {
-        background: var(--primary);  
-        a {
-          color: white; 
-        }
-      }
 `
+export default Button

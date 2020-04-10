@@ -2,7 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
 import Tour from "../components/tour"
-import styled from 'styled-components'
+//import styled from 'styled-components'
 
 const getTours = graphql`
 query {

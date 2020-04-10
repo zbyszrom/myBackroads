@@ -2,8 +2,8 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Tour from "./tour"
 import { Link } from "gatsby"
-import {Button} from '../styledComponents/button' 
-
+import Button from '../styledComponents/button' 
+import styled from 'styled-components'
 
 const getTours = graphql`
 query {
@@ -25,6 +25,24 @@ query {
 }
 `
 
+  const Section = styled.section`
+    grid-template-columns: 1fr;
+    Button {
+      background: transparent; 
+          a {
+        color: var(--primary);
+      }
+      &:hover {
+        background: var(--primary);  
+        a {
+          color: white; 
+        }
+      }
+    }
+  `
+  
+
+
 const FeaturedTours = ()=> {
 
   const response = useStaticQuery(getTours)
@@ -40,13 +58,15 @@ const FeaturedTours = ()=> {
         return <Tour key={node.id} tour = {node}  />         
       })}
     </section>
+    <Section>
         <div style = {{textAlign: 'center', marginBottom: '2rem'}}>
         <Button>
         <Link to="/tours" >
             All tours
         </Link>
         </Button>
-        </div>    
+        </div> 
+    </Section>   
     </>
     )
 
