@@ -2,7 +2,6 @@ import React, {useState} from 'react'
 import { Link } from 'gatsby'
 import { FaAlignRight, FaFacebook, FaTwitter, FaYoutube } from 'react-icons/fa'
 import logo from "../images/logo.svg"
-import styles from "./navbar.module.css"
 import styled from 'styled-components'
 
    const Nav = styled.nav`
@@ -82,15 +81,17 @@ const Navbar = ()=>{
            <SFaAlignRight />
            </Button>
           </Sheader>
+
         <ul className={
           isOpen
-          ? `${styles.links} ${styles.showNav}`
-          : `${styles.links}`
+          ? 'links showNav' 
+          : `links`
           }>
              <li><SLink to = "/">home</SLink></li>     
              <li><SLink to = "/tours">Tours</SLink></li>     
              <li><SLink to = "/contact">Contact</SLink></li>               
         </ul>
+
         <Social>
             <a href="" target="_blank" rel="noopener noreferrer"><FaFacebook size = '1.8rem' /></a>
             <a href="" target="_blank" rel="noopener noreferrer"><FaTwitter size = '1.8rem'/></a>

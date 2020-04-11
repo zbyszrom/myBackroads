@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
 import BackgroundImage from 'gatsby-background-image'
 import styled from 'styled-components'
-import Button from '../styledComponents/button'
+import {Button} from './styled'
 
 const getHero = graphql`
   query heroImage {

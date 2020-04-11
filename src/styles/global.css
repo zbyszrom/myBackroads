@@ -40,6 +40,23 @@
   li {
   padding: 0 1rem 0.5rem 1rem;
   }
+  input, textarea {
+    width: 90%;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.375rem 0.75rem;
+    border: 1px solid var(--dark);
+    border-radius: 0.25rem; 
+  }
+  label {
+      text-transform: capitalize;
+      display: block;
+      margin-bottom: 0.5rem;
+  }
+
+  
+  
+
   
   
   

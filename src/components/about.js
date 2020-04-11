@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
 import styled from 'styled-components'
-import Button from '../styledComponents/button'
+import {Button} from './styled'
 import Image from 'gatsby-image'
 
 const getAbout = graphql`
