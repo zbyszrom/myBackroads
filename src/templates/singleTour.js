@@ -8,7 +8,7 @@ export const query = graphql`
   query($slug: String!) {
     tour: datoCmsTour(slug: { eq: $slug }) {
       name
-      country 
+      country
       descriptionNode {
         childMarkdownRemark {
           html
@@ -26,31 +26,24 @@ export const query = graphql`
   }
 `
 
-const Template = ({data}) =>{
+const Template = ({ data }) => {
+  const { name, descriptionNode, images, country } = data.tour
 
-    const {
-        name,
-        descriptionNode,
-        images,
-        country,
-        } = data.tour
-
-    return(
-        <Layout>
-            <h1>{name}</h1>
-            <h4>{country}</h4>        
-            <div dangerouslySetInnerHTML={{ __html: descriptionNode.childMarkdownRemark.html }}/>
-            <section>
-            {images.map((item, index) => {
-              return (
-                <Image
-                  key={index}
-                  fluid={item.fluid} 
-                />
-              )
-            })}
-            </section>
-        </Layout>
-    )
+  return (
+    <Layout>
+      <h1>{name}</h1>
+      <h4>{country}</h4>
+      <div
+        dangerouslySetInnerHTML={{
+          __html: descriptionNode.childMarkdownRemark.html,
+        }}
+      />
+      <section>
+        {images.map((item, index) => {
+          return <Image key={index} fluid={item.fluid} />
+        })}
+      </section>
+    </Layout>
+  )
 }
 export default Template
