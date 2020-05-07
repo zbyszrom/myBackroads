@@ -32,10 +32,10 @@ footer {
   flex-direction: column;
 }
 .links a {
-  padding: 1rem 1.25rem;
+  padding: 1rem;
   text-decoration: none;
   text-transform: capitalize;
-  color: var(--mainBlack);
+  color: var(--black);
   transition: var(--main);
   font-weight: bold;
   letter-spacing: var(--mainSpacing);
@@ -48,7 +48,9 @@ footer {
   .links {
     height: auto;
     display: flex;
+    justify-content: center;
     flex-direction: row;
+    padding: 0 0.5rem;
   }
 }
 

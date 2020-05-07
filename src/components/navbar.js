@@ -10,6 +10,7 @@ const Nav = styled.nav`
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
+
     justify-content: space-between;
     align-items: center;
   }
@@ -36,7 +37,7 @@ const SFaAlignRight = styled(FaAlignRight)`
   font-size: 1.5rem;
 `
 const SLink = styled(Link)`
-  padding: 1rem 1.25rem;
+  padding: 1rem;
   text-transform: capitalize;
   color: var(--black);
   transition: var(--transition);
