@@ -4,18 +4,17 @@ main {
   flex-direction: column;
 }
 
-
 section {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
   grid-gap: 1.5rem;
   text-align: center;
-  margin: 1.5rem;  
+  margin: 1.5rem;
 }
-  
+
 footer {
   margin-top: auto;
-  background:var(--dark);
+  background: var(--dark);
   padding: 2rem;
   color: white;
   display: flex;
@@ -27,20 +26,19 @@ footer {
 
 .links {
   list-style-type: none;
-  transition: var(--mainTransition);
+  transition: var(--main);
   height: 0;
-  overflow: hidden; 
-  flex-direction: column;  
+  overflow: hidden;
+  flex-direction: column;
 }
 .links a {
-    padding: 1rem 1.25rem;
-    text-decoration: none;
-    text-transform: capitalize;
-    color: var(--mainBlack);
-    transition: var(--mainTransition);
-    font-weight: bold;
-    letter-spacing: var(--mainSpacing);
-
+  padding: 1rem 1.25rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--mainBlack);
+  transition: var(--main);
+  font-weight: bold;
+  letter-spacing: var(--mainSpacing);
 }
 
 .showNav {
@@ -52,4 +50,16 @@ footer {
     display: flex;
     flex-direction: row;
   }
+}
+
+.netlify-identity-signup,
+.netlify-identity-login,
+.netlify-identity-logout {
+  color: var(--black);
+  letter-spacing: 2px;
+}
+.netlify-identity-signup:hover,
+.netlify-identity-login:hover,
+.netlify-identity-logout:hover {
+  color: var(--primary);
 }
